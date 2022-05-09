@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	position: relative;
+	width: 550px;
+	height: 550px;
+	background: #e5e5e5;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.heading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 260px;
+	background: linear-gradient(246.26deg, #585dfe 0%, #fb3796 100%);
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.heading h1 {
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 38px;
+	letter-spacing: -0.05em;
+}
+
+/* .heading p {
+	font-weight: 800;
+	font-size: 97px;
+} */
+
+.heading #inputNum {
+	width: 60%;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 800;
+	font-size: 70px;
+	outline: none;
+	border: none;
+	background: transparent;
+	caret-color: #eee;
+}
+
+input::placeholder {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.converter {
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 260px);
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	row-gap: 30px;
+}
+
+.result h2 {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: #1a1921;
+	margin-bottom: 5px;
+}
+
+.result p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #4e4e4e;
+}
